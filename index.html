@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    
+<style>
+body {
+  background-image: url("images/img_tree.png");
+  background-color: linen;
+  background-repeat: no-repeat;
+  background-position: right top;
+  margin-right: 200px;
+  background-attachment: scroll;
+  text-align: center;
+  
+}
+
+</style>
+</head>
+<body>
+
+<h1 style= "color: rgb(78, 122, 122); background-color: lightgrey;  border: 1px solid black;
+  margin: 25px 50px 75px;">BANGLADESH</h1>
+<div class="para1">Bangladesh, a vibrant country in South Asia, is known for its lush green landscapes, rich cultural heritage</div>
+<h2  style="background-color: lightgray;  border: 1px solid black;
+  margin: 25px 50px 75px; "  >PLACE</h2>
+
+<button class="accordion">Chittagong</button>
+<div class="panel">
+  <body>
+    <div class="image-row">
+        <img src="images/patenga.jpg" alt="patenga">
+        <img src="images/foyslake.jpg" alt="Foy's Lake">
+        <img src="images/nilachal.jpg" alt="Nilachal">
+    </div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/in0xNeupTLU?si=CayQOwMjGp3uTDYc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </body>
+</div>
+
+<button class="accordion">Bandarban</button>
+<div class="panel">
+    <body>
+        <div class="image-row">
+            <img src="images/alutilacave.jpg" alt="Alutilacave">
+            <img src="images/sajekvalley.jpg" alt="sajekvalley">
+            
+        </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/QzvBWtKu7q0?si=Drbu33iIDaPBDS1g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </body>
+</div>
+
+<button class="accordion">Shylhet</button>
+<div class="panel">
+    <body>
+        <div class="image-row">
+            <img   src="images/tea.jpg" alt="tea">
+            <img width="500px"  src="images/Bisnakandi.jpg" alt="Bisnakandi">
+            
+        </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7kWBlVX8Ufw?si=m1qC371TElOq6Z5I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </body>
+     
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+
+</body>
+
+<body>
+    <h2 style="color: rgb(78, 122, 122);">ARE YOU FOUND OF TOUR!</h2>
+<div class="para1"> So without any further delay please register and enjoy some interesting offer</div>
+    
+
+<form action="/action_page.php">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" ><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" ><br>
+    <label for="phone">Enter your phone number:</label><br>
+    <input type="tel" id="phone" name="phone" ><br>
+    <label for="email">Enter your email:</label><br>
+<input type="email" id="email" name="email"><br>
+
+    <label for="Places">Choose your Destination:</label>
+        <select id="cars" name="cars">
+          <option value="volvo">Chittagong</option>
+          <option value="saab">Bandarban</option>
+          <option value="fiat">Shylhet</option>
+    <input type="submit" value="Register">
+  </form>
+
+  <body>
+
+    <h3>YOUR VALUABLE FEEDBACK </h3>
+    
+    <form action="/action_page.php" method="get">
+      <input type="checkbox" name="vehicle1" value="Bike" checked>
+      <label for="vehicle1"> Excellent</label><br>
+      <input type="checkbox" name="vehicle2" value="Car">
+      <label for="vehicle2"> good </label><br>
+      <input type="checkbox" name="vehicle3" value="Boat" >
+      <label for="vehicle3"> Average </label><br>
+      <input type="submit" value="Submit">
+    </form>
+    
+    </body>
+
+
+</body>
+</html>
+
+
